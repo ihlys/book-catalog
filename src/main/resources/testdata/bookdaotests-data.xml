@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+
+	<book id="1" title="Book one extra" 	 description="This is book one"   publicationDate="1950-01-01"/>
+	<book id="2" title="Book two eeextraaaa" description="This is book two"   publicationDate="1950-01-01"/>
+	<book id="3" title="Book three ext ra" 	 description="This is book three" publicationDate="1950-01-01"/>
+	
+	<book id="4" title="Book four" description="This is book four" publicationDate="1950-01-01"/>
+	
+	<book id="5" title="Book five" description="This is book five" publicationDate="1950-01-01"/>	
+	<author id="1" forename="Author one forename" surname="Author one surname" />
+	<book_author book_id="5" author_id="1" />
+
+	<author id="2" forename="Author two forename"   surname="Author two surname" />
+	<author id="3" forename="Author three forename" surname="Author three surname" />
+	<book id="6" title="Book six" description="This is book six" publicationDate="1950-01-01"/>
+	<book_author book_id="6" author_id="2" />
+	<book_author book_id="6" author_id="3" />
+	
+	
+	<book id="7" title="Book with many authors" description="This is with many authors" publicationDate="1950-01-01"/>
+	<author id="4" forename="Co-author one forename"     surname="Co-author one surname" />
+	<book_author book_id="7" author_id="4" />
+	
+	<author id="5" forename="Co-author two forename"     surname="Co-author two surname" />
+	<author id="6" forename="Co-author three forename"   surname="Co-author three surname" />
+	<author id="7" forename="Co-author four forename"    surname="Co-author four surname" />
+
+	
+</dataset>

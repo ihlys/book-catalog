@@ -1,0 +1,7 @@
+<Context>     
+
+	<ResourceLink 	name="jdbc/OracleDB"
+					global="jdbc/OracleDB"
+					type="javax.sql.DataSource" />
+
+</Context>

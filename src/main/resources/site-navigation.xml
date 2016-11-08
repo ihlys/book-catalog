@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<view name="index" path="/" >
+
+	<view name="authorsList" path="/authors" >
+	
+		<view name="authorsBooksList"  path="/{author.id}" />
+	
+		<view name="createAuthor" path="/create" />
+		
+		<view name="updateAuthor" path="/{author.id}/update" />
+	
+	</view>
+
+	
+	<view name="booksList" path="/books" >
+		
+		<view name="createBook" path="/create" />
+		
+		<view name="updateBook" path="/{book.id}/update" />
+		
+	</view>
+
+</view>
