@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dataset SYSTEM "dataset.dtd">
+<dataset>
+
+	<Authors id="1" forename="Author one forename"   surname="Author one surname" />
+	<Authors id="2" forename="Author two forename"   surname="Author two surname" />
+	<Authors id="3" forename="Author three forename" surname="Author three surname" />
+	
+	<Books id="1" title="Book one"   description="This is book one"   publicationDate="1950-01-01"/>
+	<Books id="2" title="Book two"   description="This is book two"   publicationDate="1950-01-01"/>
+	<Books id="3" title="Book three" description="This is book three" publicationDate="1950-01-01"/>
+	
+	<book_author book_id="1" author_id="1" />
+	<book_author book_id="2" author_id="1" />
+	<book_author book_id="3" author_id="1" />
+	
+	<book_author book_id="1" author_id="2" />
+	
+	<Books id="4" title="Book four" description="This is book four" publicationDate="1950-01-01"/>
+	<Books id="5" title="Book five" description="This is book five" publicationDate="1950-01-01"/>
+	
+	<book_author book_id="4" author_id="3" />	
+	<book_author book_id="5" author_id="3" />	
+	
+</dataset>

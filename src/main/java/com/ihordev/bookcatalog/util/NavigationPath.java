@@ -1,40 +1,40 @@
 package com.ihordev.bookcatalog.util;
 
 /**
- * The NavigationPath represents navigation link. It holds 
- * relative URL address and title.
+ * The NavigationPath represents navigation link. It holds relative URL address
+ * and title.
  */
 
 public class NavigationPath
 {
-	private String path;
-	
-	private String pathText;
+    private String path;
 
-	public NavigationPath(String path, String pathText)
-	{
-		this.path = path;
-		this.pathText = pathText;
-	}
+    private String pathText;
 
-	public String getPath()
-	{
-		return path;
-	}
+    public NavigationPath(String path, String pathText)
+    {
+        this.path = path;
+        this.pathText = pathText;
+    }
 
-	public void setPath(String path)
-	{
-		this.path = path;
-	}
+    public String getPath()
+    {
+        return path;
+    }
 
-	public String getPathText()
-	{
-		return pathText;
-	}
+    public void setPath(String path)
+    {
+        this.path = path;
+    }
 
-	public void setPathText(String pathText)
-	{
-		this.pathText = pathText;
-	}
-	
+    public String getPathText()
+    {
+        return pathText;
+    }
+
+    public void setPathText(String pathText)
+    {
+        this.pathText = pathText;
+    }
+
 }

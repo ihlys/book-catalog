@@ -1,0 +1,16 @@
+<!ELEMENT dataset (Authors | Books | book_author)*>
+<!ELEMENT Authors (#PCDATA)>
+<!ELEMENT Books (#PCDATA)>
+<!ELEMENT book_author (#PCDATA)>
+
+<!ATTLIST Authors id CDATA #IMPLIED>
+<!ATTLIST Authors forename CDATA #REQUIRED>
+<!ATTLIST Authors surname CDATA #REQUIRED>
+
+<!ATTLIST Books id CDATA #IMPLIED>
+<!ATTLIST Books title CDATA #REQUIRED>
+<!ATTLIST Books description CDATA #REQUIRED>
+<!ATTLIST Books publicationDate CDATA #REQUIRED>
+
+<!ATTLIST book_author book_id CDATA #REQUIRED>
+<!ATTLIST book_author author_id CDATA #REQUIRED>

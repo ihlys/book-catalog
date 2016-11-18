@@ -17,29 +17,32 @@ import com.ihordev.bookcatalog.web.WebMarker;
 @Component
 @EnableWebMvc
 @ComponentScan(basePackageClasses = WebMarker.class)
-public class WebConfig extends WebMvcConfigurerAdapter {
-	
+public class WebConfig extends WebMvcConfigurerAdapter
+{
+
     @Bean
-    public ViewResolver viewResolver() {
+    public ViewResolver viewResolver()
+    {
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
         resolver.setPrefix("/WEB-INF/views/");
         resolver.setSuffix(".jsp");
         resolver.setExposeContextBeansAsAttributes(true);
-        
+
         return resolver;
     }
 
     @Override
-    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer)
+    {
         configurer.enable();
     }
-	
-    
+
     @Autowired
     public HandlerInterceptor navigationAddingHandlerInterceptor;
-    
+
     @Override
-    public void addInterceptors(InterceptorRegistry registry) {
+    public void addInterceptors(InterceptorRegistry registry)
+    {
         registry.addInterceptor(navigationAddingHandlerInterceptor);
-    } 
+    }
 }

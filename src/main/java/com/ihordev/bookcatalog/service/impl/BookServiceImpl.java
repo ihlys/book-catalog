@@ -14,49 +14,49 @@ import com.ihordev.bookcatalog.service.BookService;
 public class BookServiceImpl implements BookService
 {
 
-	@Autowired
-	private BookDAO bookDAO; 
-	
-	@Override
-	@Transactional
-	public void addBook(Book book)
-	{
-		bookDAO.add(book);
-	}
-	
-	@Override
-	@Transactional(readOnly = true)
-	public Book findById(Long id)
-	{
-		return bookDAO.findById(id);
-	}
+    @Autowired
+    private BookDAO bookDAO;
 
-	@Override
-	@Transactional(readOnly = true)
-	public List<Book> findAllBooks()
-	{
-		return bookDAO.findAll();
-	}
+    @Override
+    @Transactional
+    public void addBook(Book book)
+    {
+        bookDAO.add(book);
+    }
 
-	@Override
-	@Transactional(readOnly = true)
-	public List<Book> findBooksByTitle(String title)
-	{
-		return bookDAO.findBooksByTitle(title);
-	}
-	
-	@Override
-	@Transactional
-	public void updateBook(Book book)
-	{
-		bookDAO.update(book);
-	}
+    @Override
+    @Transactional(readOnly = true)
+    public Book findById(Long id)
+    {
+        return bookDAO.findById(id);
+    }
 
-	@Override
-	@Transactional
-	public void deleteBookById(long bookId)
-	{
-		bookDAO.deleteById(bookId);
-	}
+    @Override
+    @Transactional(readOnly = true)
+    public List<Book> findAllBooks()
+    {
+        return bookDAO.findAll();
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Book> findBooksByTitle(String title)
+    {
+        return bookDAO.findBooksByTitle(title);
+    }
+
+    @Override
+    @Transactional
+    public void updateBook(Book book)
+    {
+        bookDAO.update(book);
+    }
+
+    @Override
+    @Transactional
+    public void deleteBookById(long bookId)
+    {
+        bookDAO.deleteById(bookId);
+    }
 
 }

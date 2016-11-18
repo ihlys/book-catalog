@@ -6,16 +6,16 @@ import com.ihordev.bookcatalog.domain.Book;
 
 public interface BookService
 {
-	
-	Book findById(Long id);
-	
-	List<Book> findAllBooks();
-	
-	List<Book> findBooksByTitle(String title);
 
-	void addBook(Book book);
+    Book findById(Long id);
 
-	void updateBook(Book book);
-	
-	void deleteBookById(long bookId);
+    List<Book> findAllBooks();
+
+    List<Book> findBooksByTitle(String title);
+
+    void addBook(Book book);
+
+    void updateBook(Book book);
+
+    void deleteBookById(long bookId);
 }

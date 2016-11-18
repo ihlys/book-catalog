@@ -5,15 +5,15 @@ import java.util.List;
 
 public interface GenericDAO<E, ID extends Serializable>
 {
-	void add(E entity);
+    void add(E entity);
 
-	void update(E entity);
+    void update(E entity);
 
-	void delete(E entity);
+    void delete(E entity);
 
-	E findById(ID id);
-	
-	E findReferenceById(ID id);
+    E findById(ID id);
 
-	List<E> findAll();
+    E findReferenceById(ID id);
+
+    List<E> findAll();
 }

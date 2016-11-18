@@ -6,17 +6,17 @@ import com.ihordev.bookcatalog.domain.Author;
 
 public interface AuthorService
 {
-	
-	Author findById(Long id);
 
-	Author findByIdWithBooks(Long id);
-	
-	List<Author> findAllAuthors();
+    Author findById(Long id);
 
-	void addAuthor(Author author);
-	
-	void updateAuthor(Author author);
+    Author findByIdWithBooks(Long id);
 
-	void deleteAuthorById(long id);
-	
+    List<Author> findAllAuthors();
+
+    void addAuthor(Author author);
+
+    void updateAuthor(Author author);
+
+    void deleteAuthorById(long id);
+
 }
